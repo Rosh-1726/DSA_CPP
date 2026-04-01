@@ -23,3 +23,6 @@ int main ()
     }
     return 0;
 }
+
+/* 153,370 is armstrong number
+123 , 200 are not armstrong number */
