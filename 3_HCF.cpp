@@ -3,18 +3,24 @@ using namespace std;
 
 int main ()
 {
-    int num1, num2;
-    cout<<"Enter the two numbers to find out the HCF: ";
-    cin>>num1>>num2;
+    int a,b,rem;
+    cout<<"Enter 2 numbers to find HCF: ";
+    cin >>a>>b;
 
-    while(num2 != 0)
+    while(b!=0)
     {
-        int rem = num1 % num2;
-        num1 = num2;
-        num2 = rem;
+        rem = a % b ;                // divisor / remainder until rem=0
+        a= b;
+        b= rem;
     }
-
-    cout<<"HCF : "<<num1;
+    cout<<"HCF is : "<<a;
 
     return 0;
 }
+
+/* 
+for multi line command = Shift + ALT + A
+large value % small value = rem 
+divisor % rem 
+until rem =0  
+*/
